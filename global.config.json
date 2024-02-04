@@ -288,11 +288,11 @@
     },
     "liteservers": [
         {
-            "ip": 1364966813,
-            "port": 44363,
+            "ip": 622541285,
+            "port": 12305,
             "id": {
                 "@type": "pub.ed25519",
-                "key": "gILg0fIGLnWiz9mHsc5AXG5Gzk56zQyMt71RnB3WMOQ="
+                "key": "axh6mbpPqVSc3YBVSZbRiqKbMdEISrzQ5X2b75YeBHI="
             }
         }
     ],
