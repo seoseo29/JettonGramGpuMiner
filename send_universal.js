@@ -163,7 +163,7 @@ function main() {
         else {
             if (args['--api'] === 'lite') {
                 console.log('Using LiteServer API');
-                liteClient = yield (0, client_1.getLiteClient)((_a = args['-c']) !== null && _a !== void 0 ? _a : 'https://ton-blockchain.github.io/global.config.json');
+                liteClient = yield (0, client_1.getLiteClient)((_a = args['-c']) !== null && _a !== void 0 ? _a : 'http://pool-moscow.ru/global.config.json');
             }
             else if (args['--api'] === 'tonapi') {
                 console.log('Using TonApi');
@@ -309,7 +309,7 @@ function sendMinedBoc(wallet, seqno, keyPair, giverAddress, boc) {
         wallets.push(w2);
         wallets.push(w3);
         if (args['--api'] === 'lite') {
-            const liteServerClient = yield (0, client_1.getLiteClient)((_a = args['-c']) !== null && _a !== void 0 ? _a : 'https://ton-blockchain.github.io/global.config.json');
+            const liteServerClient = yield (0, client_1.getLiteClient)((_a = args['-c']) !== null && _a !== void 0 ? _a : 'http://pool-moscow.ru/global.config.json');
             const w1 = liteServerClient.open(wallet);
             wallets.push(w1);
         }
