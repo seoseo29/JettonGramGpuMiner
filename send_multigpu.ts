@@ -385,9 +385,7 @@ async function sendMinedBoc(
                     body: boc,
                 })],
                 sendMode: 3 as any,
-            }).catch(e => {
-                //
-            })
+             }).then(()=> console.log('Any ok'), e => console.log('Any error '+e.message));
         }
     }
 }
