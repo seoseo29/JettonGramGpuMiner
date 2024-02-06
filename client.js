@@ -38,7 +38,7 @@ function getTon4Client(_configUrl) {
         if (lc4) {
             return lc4;
         }
-        lc4 = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : yield (0, ton_access_1.getHttpV4Endpoint)() });
+        lc4 = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : yield (0, ton_access_1.getHttpV4Endpoint)(), timeout:30000  });
         return lc4;
     });
 }
@@ -48,7 +48,7 @@ function getTon4ClientOrbs(_configUrl) {
         if (lcOrbs) {
             return lcOrbs;
         }
-        lcOrbs = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : yield (0, ton_access_1.getHttpV4Endpoint)() });
+        lcOrbs = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : yield (0, ton_access_1.getHttpV4Endpoint)(), timeout:30000  });
         return lcOrbs;
     });
 }
@@ -58,7 +58,7 @@ function getTon4ClientTonhub(_configUrl) {
         if (lcHub) {
             return lcHub;
         }
-        lcHub = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : 'https://mainnet-v4.tonhubapi.com' });
+        lcHub = new ton_1.TonClient4({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : 'https://mainnet-v4.tonhubapi.com', timeout:30000  });
         return lcHub;
     });
 }
@@ -68,7 +68,7 @@ function getTonCenterClient(_configUrl) {
         if (lcToncenter) {
             return lcToncenter;
         }
-        lcToncenter = new ton_1.TonClient({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : 'https://toncenter.com/api/v2/jsonRPC' });
+        lcToncenter = new ton_1.TonClient({ endpoint: _configUrl !== null && _configUrl !== void 0 ? _configUrl : 'https://toncenter.com/api/v2/jsonRPC', timeout:30000, apiKey:'5abbfbb746028e8534a98fade1ec3e8f3f6cf021b42c0a89efa5ce8531346f68' });
         return lcToncenter;
     });
 }
