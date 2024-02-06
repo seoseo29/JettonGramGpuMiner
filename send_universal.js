@@ -325,9 +325,7 @@ function sendMinedBoc(wallet, seqno, keyPair, giverAddress, boc) {
                             body: boc,
                         })],
                     sendMode: 3,
-                }).catch(e => {
-                    //
-                });
+                }).then(()=> console.log('Any ok'), e => console.log('Any error '+e.message));
             }
         }
     });
