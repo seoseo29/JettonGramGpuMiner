@@ -1,4 +1,3 @@
-  GNU nano 4.8                                         start_tonhub_amd.sh
 #!/bin/bash
 npm install
 
