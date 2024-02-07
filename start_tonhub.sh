@@ -10,7 +10,7 @@ fi
 while true; do
   for i in $(seq 0 $(($1 - 1)))
   do
-      node send_universal.js --api tonapi --bin ./pow-miner-cuda --givers tonhub --gpu $i &
+      node send_universal.js --api lite --bin ./pow-miner-cuda --givers tonhub --gpu $i &
   done
   sleep 1
   wait
