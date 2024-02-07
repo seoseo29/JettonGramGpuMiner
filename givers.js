@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.givers1000 = exports.givers100 = void 0;
 exports.givers100 = [
-
+    { address: 'EQAidDzp6v4oe-vKFWvsV8MQzY-4VaeUFnGM3ImrKIJUIid9', reward: 100 },
 ];
 exports.givers1000 = [
     { address: 'EQAvheS_G-U57CE55UlwF-3M-cc4cljbLireYCmAMe_RHWGF', reward: 1000 },
