@@ -288,13 +288,14 @@
     },
     "liteservers": [
         {
-            "ip": 1364966813,
-            "port": 44363,
+            "ip": 1364966707,
+            "port": 2906,
             "id": {
                 "@type": "pub.ed25519",
-                "key": "gILg0fIGLnWiz9mHsc5AXG5Gzk56zQyMt71RnB3WMOQ="
+                "key": "etkps+gP0/mldGlE6kjzNOWDUDp2h2tVQRirGzmHp0c="
             }
         }
+
     ],
     "validator": {
         "@type": "validator.config.global",
